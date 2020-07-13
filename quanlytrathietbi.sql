@@ -13,6 +13,8 @@ primary key(MaTB)
 insert into tblThietBi values ('TB01',N'Chuột',N'Hư hỏng nặng',1,N'Cần thay thể gấp')
 insert into tblThietBi values ('TB02',N'Bàn phím',N'Gõ không ăn',1,N'Cần thay thể gấp')
 insert into tblThietBi values ('TB03',N'Màn hình',N'Có điểm chết',1,N'Cần bảo hành')
+insert into tblThietBi values ('TB04',N'Màn hình',N'Có điểm chết',4,N'Cần bảo hành')
+insert into tblThietBi values ('TB05',N'Màn hình',N'Có điểm chết',4,N'Cần bảo hành')
 
 create table tblPhong (
 MaPhong nvarchar(10),
@@ -51,4 +53,9 @@ primary key(MaTB,NVTra)
 
 insert into tblPhieuTra values ('TB01',N'Cao Tiến Đạt',N'Cao Tiến Đạt','2020-7-13',3,N'Hư hỏng nặng','PH01')
 insert into tblPhieuTra values ('TB02',N'Phan Cư Chánh',N'Phan Cư Chánh','2020-7-13',2,N'Lỗi phần mềm','PH02')
+
 insert into tblPhieuTra values ('TB03',N'Nguyễn Quốc Việt',N'Nguyễn Quốc Việt','2020-7-14',4,N'Gì gì đó ...','PH03')
+
+insert into tblPhieuTra values ('TB04',N'Nguyễn Quốc Việt',N'Nguyễn Quốc Việt','2020-7-14',4,N'Gì gì đó ...','PH01')
+
+delete tblPhieuTra where MaTB

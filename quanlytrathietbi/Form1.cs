@@ -90,7 +90,86 @@ namespace quanlytrathietbi
 
         private void btnlap_Click(object sender, EventArgs e)
         {
+            string sql; //Lưu lệnh sql
+            sql = "Select MaTB From tblPhieuTra where MaTB=N'" + comboBox1.Text.Trim() + "'";
 
+
+            if (textBox1.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                textBox1.Focus();
+                return;
+            }
+            if (comboBox1.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBox1.Focus();
+                return;
+            }
+            if (comboBox2.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBox2.Focus();
+                return;
+            }
+            if (comboBox3.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBox3.Focus();
+                return;
+            }
+            if (comboBox5.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                comboBox5.Focus();
+                return;
+            }
+
+            if (dateTimePicker1.Text.Trim().Length == 0) //Nếu chưa nhập mã chất liệu
+            {
+                MessageBox.Show("lỗi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dateTimePicker1.Focus();
+                return;
+            }
+
+
+            if (Class.Functions.CheckKey(sql))
+            {
+                MessageBox.Show("Đã tồn tại, bạn phải nhập mã khác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                textBox1.Focus();
+                return;
+            }
+            
+            sql = "INSERT INTO tblPhieuTra VALUES('" + comboBox1.Text + "',N'" + comboBox2.Text + "',N'" + comboBox3.Text + "','" + dateTimePicker1.Text + "','" + textBox1.Text + "',N'" + comboBox5.Text + "','" + comboBox4.Text + "')";
+            
+            
+//insert into tblPhieuTra values ('TB01',N'Cao Tiến Đạt',N'Cao Tiến Đạt','2020-7-13',3,N'Hư hỏng nặng','PH01')
+
+            //insert into Sach values(N'S02',N'Hi',3,2000,2000,'N01');
+            Class.Functions.RunSQL(sql); //Thực hiện câu lệnh sql
+            LoadDataGridView();
+
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            string sql; //Lưu câu lệnh sql
+            if (tblCL.Rows.Count == 0)
+            {
+                MessageBox.Show("Không còn dữ liệu", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (MessageBox.Show("Bạn có muốn xoá không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                sql = "DELETE tblPhieuTra WHERE MaTB=N'" + dataGridView1.CurrentRow.Cells["MaTB"].Value.ToString() + "'";
+                Class.Functions.RunSqlDel(sql);
+
+                //ResetValue();
+                LoadDataGridView();
+                //ResetValue();
+
+            }
         }
     }
 }
