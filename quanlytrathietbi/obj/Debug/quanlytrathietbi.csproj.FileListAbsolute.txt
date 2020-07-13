@@ -1,1 +1,10 @@
 C:\Users\Administrator\AppData\Local\Temporary Projects\quanlytrathietbi\bin\Debug\quanlytrathietbi.exe.config
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\bin\Debug\quanlytrathietbi.exe.config
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\bin\Debug\quanlytrathietbi.exe
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\bin\Debug\quanlytrathietbi.pdb
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.csprojResolveAssemblyReference.cache
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.Form1.resources
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.Properties.Resources.resources
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.csproj.GenerateResource.Cache
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.exe
+D:\quanlytrathietbi\quanlytrathietbi\quanlytrathietbi\obj\Debug\quanlytrathietbi.pdb
