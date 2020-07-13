@@ -140,7 +140,7 @@ namespace quanlytrathietbi
                 return;
             }
             
-            sql = "INSERT INTO tblPhieuTra VALUES('" + comboBox1.Text + "',N'" + comboBox2.Text + "',N'" + comboBox3.Text + "','" + dateTimePicker1.Text + "','" + textBox1.Text + "',N'" + comboBox5.Text + "','" + comboBox4.Text + "')";
+            sql = "INSERT INTO tblPhieuTra VALUES(N'" + comboBox1.Text + "',N'" + comboBox2.Text + "',N'" + comboBox3.Text + "',N'" + dateTimePicker1.Value + "',N'" + textBox1.Text + "',N'" + comboBox5.Text + "',N'" + comboBox4.Text + "')";
             
             
 //insert into tblPhieuTra values ('TB01',N'Cao Tiến Đạt',N'Cao Tiến Đạt','2020-7-13',3,N'Hư hỏng nặng','PH01')
