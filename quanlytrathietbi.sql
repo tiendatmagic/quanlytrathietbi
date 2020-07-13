@@ -49,7 +49,6 @@ primary key(MaTB,NVTra)
 )
 
 
-
-insert into tblPhieuTra values ('TB01',N'Cao Tiến Đạt',N'Phan Cư Chánh','2020-7-13',3,N'Hư hỏng nặng','PH01')
-insert into tblPhieuTra values ('TB02',N'Cao Tiến Đạt',N'Nguyễn Quốc Việt','2020-7-13',2,N'Hư hỏng nặng','PH02')
-insert into tblPhieuTra values ('TB03',N'Nguyễn Quốc Việt',N'Phan Cư Chánh','2020-7-14',4,N'Hư hỏng nặng','PH03')
+insert into tblPhieuTra values ('TB01',N'Cao Tiến Đạt',N'Cao Tiến Đạt','2020-7-13',3,N'Hư hỏng nặng','PH01')
+insert into tblPhieuTra values ('TB02',N'Phan Cư Chánh',N'Phan Cư Chánh','2020-7-13',2,N'Lỗi phần mềm','PH02')
+insert into tblPhieuTra values ('TB03',N'Nguyễn Quốc Việt',N'Nguyễn Quốc Việt','2020-7-14',4,N'Gì gì đó ...','PH03')
